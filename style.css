@@ -1,0 +1,339 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    color:black;
+    direction: ltr;
+}
+.post-card {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 15px;
+        }
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pagination button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .pagination button.active {
+            background-color: #FF9934;
+            color: white;
+            font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+.main-header {
+    background-color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header .logo img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #FF9934; /* Example hover color */
+}
+
+.user-actions .sign-in-btn {
+    background-color: #FF9934; /* Example button color */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-actions .sign-in-btn:hover {
+    background-color: #FF9934;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-color: #ccc; /* Placeholder background */
+    overflow: hidden; /* Ensures image fits */
+    margin-bottom: 20px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Covers the area, cropping if necessary */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Secondary Navigation */
+.secondary-nav ul {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.secondary-nav li {
+    padding: 10px 0;
+    margin-left: 20px;
+    margin: auto;
+}
+
+.secondary-nav a {
+    color: #555;
+    font-weight: bold;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 30px;
+}
+
+.secondary-nav a.active {
+    color: #FF9934;
+    border-bottom: 3px solid #FF9934;
+}
+
+/* Main Content - Posts Container */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Post Card */
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    padding: 20px;
+}
+
+.post-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.post-card .author-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.post-card .post-image-container {
+    width: 100%; /* Image takes full width of card */
+    max-height: 200px; /* Limit image height */
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post-card .post-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, maintaining aspect ratio */
+}
+
+
+.post-card .post-excerpt {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.post-card .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.post-card .likes-comments {
+    display: flex;
+    gap: 15px;
+}
+
+.post-card .likes-comments span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Placeholder for icons - you'd use font awesome or SVG here */
+.post-card .likes-comments span::before {
+    content: "👍"; /* Placeholder for like icon */
+    font-size: 1em;
+}
+
+.post-card .likes-comments span:nth-child(2)::before {
+    content: "💬"; /* Placeholder for comment icon */
+}
+
+.post-card .read-more-btn {
+    color: #FF9934;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post-card .read-more-btn:hover {
+    color: #0056b3;
+}
+
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: #555;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #eee;
+}
+
+.pagination a.active {
+    background-color: #FF9934;
+    color: white;
+    border-color: #FF9934;
+}
+
+.pagination .pagination-arrow {
+    background-color: #fff;
+    color: #FF9934;
+    border-color: #FF9934;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.pagination .pagination-arrow:hover {
+    background-color: #e0f2ff;
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: #2c3e50; /* Dark blue/gray */
+    color: #ecf0f1; /* Light gray text */
+    padding: 40px 50px 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 0.9em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Minimum width for sections */
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #bdc3c7; /* Lighter gray for links */
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section.logo-section .contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px; /* Space between icons */
+}
+
+.social-icons img {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px; /* Slightly rounded corners for icons */
+}

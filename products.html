@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Question</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="Image">
+        <div class="FormDev">
+          <h3>Ask Question</h3>
+          <form id="form">
+            <input
+              type="text"
+              id="quest"
+              placeholder="Add question"
+              required
+            />
+            <textarea
+              id="desk"
+              placeholder="Add Description"
+              required
+            ></textarea>
+
+            <div class="">
+              <input
+                required
+                id="srcImg"
+                type="url"
+                placeholder="Enter Image Url"
+                style="background-color: white;width: 100%; outline:none; border: 0;"
+              />
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="cancelBtn" id="clearBtn">
+                Cancel
+              </button>
+              <button type="submit" class="postBtn" id="postBtn">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+ <script src="main.js"></script>
+</html>
